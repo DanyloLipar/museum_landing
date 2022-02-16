@@ -1,0 +1,25 @@
+.actual {
+  padding: 90px 20px 0;
+  box-sizing: border-box;
+
+  @include onTablet {
+    padding: 105px 39px 0;
+  }
+
+  @include onTablet {
+    padding: 105px 55px 0;
+  }
+
+  &__heading {
+    padding-bottom: 60px;
+    line-height: 35px;
+
+    @include onTablet {
+      padding-bottom: 75px;
+    }
+
+    @include onDesktop {
+      padding-bottom: 71px;
+    }
+  }
+}

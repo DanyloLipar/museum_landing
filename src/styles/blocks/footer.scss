@@ -1,0 +1,151 @@
+.footer {
+  background: $background;
+  margin-top: 80px;
+  color: $white;
+}
+
+.information {
+  padding: 34px 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  @include onTablet {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 50px 39px 0;
+  }
+
+  @include onDesktop {
+    grid-template-columns: repeat(12, 1fr);
+    padding: 50px 55px 0;
+  }
+
+  &__contacts {
+    grid-column: 1 / 3;
+    &-head {
+      font-size: 18px;
+      line-height: 27px;
+
+      @include onTablet {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+    }
+
+    &-location {
+      margin-top: 10px;
+      line-height: 24px;
+      font-weight: 400;
+
+      & > a {
+        text-decoration: none;
+        color: $white;
+        transition: color 0.2s;
+
+        &:hover {
+          color: $btn-bckg;
+        }
+      }
+    }
+  }
+
+  &__schedule {
+    grid-column: 3 / 5;
+
+    @include onDesktop {
+      grid-column: 5 / 8;
+    }
+
+    &-head {
+      font-size: 18px;
+      line-height: 27px;
+
+      @include onTablet {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+    &-hours {
+      margin-top: 10px;
+      line-height: 24px;
+    }
+  }
+
+  &__general {
+
+    @include onDesktop {
+      grid-column: 9 / 11;
+    }
+
+    &-head {
+      font-size: 20px;
+    }
+
+    &-links {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-top: 10px;
+
+      &--thing {
+        text-decoration: none;
+        color: $white;
+        line-height: 24px;
+        transition: color 0.2s;
+
+        &:hover {
+          color: $btn-bckg;
+        }
+      }
+    }
+  }
+}
+
+.networks {
+  margin-top: 31px;
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  &__network-one {
+    & > svg:hover path {
+      fill: $btn-bckg;
+    }
+  }
+}
+
+.privacy {
+  padding: 60px 20px 30px;
+  display: flex;
+  justify-content: space-between;
+
+  @include onTablet {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+
+  @include onDesktop {
+    padding: 70px 55px 30px;
+  }
+
+  &__contents {
+    display: flex;
+    gap: 22px;
+    font-size: 14px;
+    line-height: 19px;
+    align-items: center;
+  }
+
+  &__up {
+    @include sizer(15px, 20px);
+    background: url(".././images/scroll-up.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

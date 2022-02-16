@@ -1,0 +1,101 @@
+.upcoming {
+  padding: 100px 20px 0;
+
+  @include onTablet {
+    padding: 124px 39px 0;
+  }
+
+  @include onDesktop {
+    padding: 200px 55px 0;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+
+    @include onTablet {
+      justify-content: space-between;
+    }
+  }
+
+  &__box:last-child {
+    margin-top: 60px;
+  }
+}
+
+.box {
+  margin-top: 60px;
+  display: block;
+  width: 100%;
+
+  @include onTablet {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 30px;
+    margin-top: 66px;
+  }
+
+  @include onDesktop {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__photo {
+    grid-column: 1 / 4;
+    width: 100%;
+    max-height: 475px;
+
+    @include onDesktop {
+      grid-column: 1 / 5;
+    }
+
+    &-img {
+      height: 100%;
+      width: 100%;
+      max-height: 475px;
+      object-fit: cover;
+    }
+  }
+
+  &__desc {
+    grid-column: 4 / 7;
+
+    @include onDesktop {
+      grid-column: 5 / 11;
+    }
+
+    &-date {
+      margin-top: 20px;
+      color: $btn-bckg;
+
+      @include onTablet {
+        margin: 0;
+      }
+    }
+
+    &-head {
+      margin-top: 10px;
+      font-size: 20px;
+      line-height: 25px;
+
+      @include onDesktop {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+
+    &-txt {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    &-button {
+      @include onTablet {
+        margin-top: 50px;
+      }
+
+      @include onDesktop {
+        width: 48%;
+      }
+    }
+  }
+}

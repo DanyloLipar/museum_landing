@@ -1,0 +1,84 @@
+.event {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+
+  @include onTablet {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 30px;
+  }
+
+  @include onDesktop {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__content {
+    box-sizing: border-box;
+    @include onTablet {
+      grid-column: 1 / 4;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 7;
+    }
+
+    &:last-child {
+      padding-top: 60px;
+
+      @include onTablet {
+        padding-top: 0;
+        grid-column: 4 / 7;
+      }
+
+      @include onDesktop {
+        grid-column: 7 / 13;
+      }
+    }
+
+    &-photo {
+      width: 100%;
+      max-height: 484px;
+      box-sizing: border-box;
+
+      &--image {
+        height: 100%;
+        max-height: 484px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-date {
+      padding-top: 20px;
+      color: $btn-bckg;
+    }
+
+    &-desc {
+      padding-top: 10px;
+      font-size: 20px;
+      line-height: 25px;
+      height: 40px;
+
+      @include onTablet {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+
+    &-text {
+      padding-top: 20px;
+      padding-bottom: 40px;
+      line-height: 20px;
+      min-height: 90px;
+      @include onTablet {
+        line-height: 24px;
+      }
+
+      @include onDesktop {
+        padding-bottom: 50px;
+        padding-top: 20px;
+      }
+    }
+  }
+}

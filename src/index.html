@@ -3,11 +3,394 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>NAMU</title>
+    <link rel="shortcut icon" href="./images/icon.svg">
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+  <body id="page">
+    <header class="head">
+      <div class="navigation">
+        <a href="#">
+          <img src="./images/logo.svg" alt="namu logo" class="navigation__logo">
+        </a>
+        <div class="navigation__items">
+          <a class="navigation__items-link" href="#" id="link"></a>
+          <select class="navigation__items-select">
+            <option class="navigation__items-select--1" value="1">UA</option>
+            <option class="navigation__items-select--1" value="2">EN</option>
+          </select>
+        </div>
+      </div>
+      <section class="content">
+        <div class="content__text">
+          <p class="content__text-one">10 серпня - 10 листопада</p>
+          <div class="content__text-gen">
+            <h1 class="content__text-gen--item">Мистецтво ХІХ - ХХ ст.</h1>
+          </div>
+          <div class="content__text-two">
+            <p class="content__text-two--item">Внесок українських митців у світову культуру 19-20 ст.</p>
+          </div>
+          <div class="content__text-button">
+            <div class="content__text-button--item button">
+              <a
+                href="#visiting"
+                class="button__link"
+              >Купити квиток</a>
+            </div>
+          </div>
+          <div class="content__text-line">
+            <p class="content__text-line--date">
+              10.08 - 10.10
+            </p>
+            <div class="content__text-line--thing"></div>
+          </div>
+        </div>
+        <div class="content__photobox">
+          <img src="./images/head-photo/1.png" alt="lady" class="content__photobox-photo">
+        </div>
+      </section>
+    </header>
+    <nav class="burger" id="burger-menu">
+      <div class="burger__navigation navigation">
+        <a href="#" id="menu-link">
+          <img src="./images/logo.svg" alt="namu logo" class="navigation__logo">
+        </a>
+        <div class="navigation__items">
+          <a class="navigation__items-cross" id="cross" href="#"></a>
+          <select class="navigation__items-select">
+            <option class="navigation__items-select--1" value="1">UA</option>
+            <option class="navigation__items-select--1" value="2">EN</option>
+          </select>
+        </div>
+      </div>
+      <div class="burger__transition">
+        <div class="burger__transition-representation representation">
+          <div class="representation__schedule">
+            <div class="representation__schedule-place place">
+              <p class="place__head">Розклад сьогодні</p>
+              <p class="place__txt">12:00 - 19:00</p>
+            </div>
+            <div class="representation__schedule-place place">
+              <p class="place__head">Адреса</p>
+              <p class="place__txt">
+                <a
+                  target="_blank"
+                  href="https://www.google.com/maps/place/%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9+%D1%85%D1%83%D0%B4%D0%BE%D0%B6%D0%BD%D1%96%D0%B9+%D0%BC%D1%83%D0%B7%D0%B5%D0%B9+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8/@50.4494397,30.5285706,17z/data=!4m13!1m7!3m6!1s0x40d4ce524453048d:0x49a2895b6cb43e10!2z0LLRg9C70LjRhtGPINCc0LjRhdCw0LnQu9CwINCT0YDRg9GI0LXQstGB0YzQutC-0LPQviwgNiwg0JrQuNGX0LIsIDAyMDAw!3b1!8m2!3d50.4494397!4d30.5307593!3m4!1s0x40d4ce524453048d:0x549e3a34119f524f!8m2!3d50.4493269!4d30.5304215"
+                >Київ, вул. М. Грушевського, 6</a>
+              </p>
+            </div>
+          </div>
+          <div class="representation__go">
+            <a class="representation__go-link" href="#exhibitions" id="actual-link">Актуальні виставки</a>
+            <a class="representation__go-link" href="#coming" id="coming-link">Найближчі події</a>
+            <a class="representation__go-link" href="#news" id="news-link">Новини</a>
+          </div>
+          <div class="representation__line"></div>
+          <div class="representation__button">
+            <div class="representation__button-item button">
+              <a
+                href="#visiting"
+                class="button__link"
+                id="slider"
+              >Купити квиток</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="general">
+      <section class="actual">
+        <div class="actual__heading heading" id="exhibitions">
+          <h3 class="heading__first">Актуальні виставки</h3>
+          <div class="heading__text archive__one archive">
+            <a
+              href="https://www.facebook.com/namu.museum/"
+              target="_blank"
+              class="archive__one-link"
+            >Архів виставок ➜</a>
+          </div>
+        </div>
+        <div class="actual__events event">
+          <div class="event__content">
+            <div class="event__content-photo">
+              <img class="event__content-photo--image" src="./images/main-mobile/001.png" alt="angel">
+            </div>
+            <p class="event__content-date">11.07 - 22.09</p>
+            <h4 class="event__content-desc">Кураторська виставка “Ангели”</h4>
+            <p class="event__content-text">Виставковий проект «Ангели» – знакова подія для української культури і водночас наймасштабніший...</p>
+            <div class="event__content-button button">
+              <a
+                href="#visiting"
+                class="button__link"
+              >Купити квиток</a>
+            </div>
+          </div>
+          <div class="event__content">
+            <div class="event__content-photo">
+              <img class="event__content-photo--image" src="./images/main-mobile/002.png" alt="pymonenko">
+            </div>
+            <p class="event__content-date">Діє постійно</p>
+            <h4 class="event__content-desc">Мистецтво ХХ ст. — XXI ст.</h4>
+            <p class="event__content-text">Знакові роботи Алли Горської, Миколи Самокиша, Федора Кричевського та інших митців.</p>
+            <div class="event__content-button button">
+              <a
+                href="#visiting"
+                class="button__link"
+              >Купити квиток</a>
+            </div>
+            <div class="content__archive archive__two archive">
+              <a
+                href="https://www.facebook.com/namu.museum/"
+                target="_blank"
+                class="archive__two-link"
+              >Архів виставок ➜</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="upcoming">
+        <div class="upcoming__heading heading" id="coming">
+          <h3 class="upcoming__heading-gen heading__first">Найближчі події</h3>
+          <div class="upcoming__archive archive__one archive">
+            <a
+            href="https://www.facebook.com/namu.museum/events/?ref=page_internal"
+            target="_blank"
+            class="archive__two-link"
+            >Календар подій ➜</a>
+          </div>
+        </div>
+        <div class="upcoming__box box">
+          <div class="box__photo">
+            <img class="box__photo-img" src="./images/main-mobile/003.png" alt="man">
+          </div>
+          <div class="box__desc">
+            <p class="box__desc-date">14.08 о 13:00</p>
+            <h4 class="box__desc-head">Кураторські екскурсії від Павла Гудімова </h4>
+            <p class="box__desc-txt">Таємниці підготовки, історії експонатів, магія дійства до і в момент вашої присутності – розгортатиметься...</p>
+            <div class="box__desc-button button">
+              <a
+                href="#visiting"
+                class="button__link"
+              >Зареєструватися</a>
+            </div>
+          </div>
+        </div>
+        <div class="upcoming__box box">
+          <div class="box__photo">
+            <img class="box__photo-img" src="./images/main-mobile/004.png" alt="man">
+          </div>
+          <div class="box__desc">
+            <p class="box__desc-date">16.08 о 13:00</p>
+            <h4 class="box__desc-head">Майстер-клас “Подорож до Австралії”</h4>
+            <p class="box__desc-txt">Цієї неділі о 14:00 на арт-мандрівників чекає останній пункт кругосвітньої подорожі - Австралія.</p>
+            <div class="box__desc-button button">
+              <a
+                href="#visiting"
+                class="button__link"
+              >Зареєструватися</a>
+            </div>
+          </div>
+        </div>
+        <div class="upcoming__archive archive__two archive">
+          <a
+            href="https://www.facebook.com/namu.museum/events/?ref=page_internal"
+            target="_blank"
+            class="archive__two-link"
+          >Календар подій ➜</a>
+        </div>
+      </section>
+      <section class="visit" id="visiting">
+        <div class="visit__info">
+          <h2 class="visit__info-gen">Сплануйте візит до музею</h2>
+          <p class="visit__info-words">Оберіть зручний день, зареєструйтесь на події, що цікавлять, купіть квиток заздалегідь, щоб ніщо не завадило вам насолоджуватись мистецтвом</p>
+          <div class="visit__info-button button">
+            <a
+              target="_blank"
+              href="https://kontramarka.ua/uk/museum"
+              class="button__link"
+            >Почати</a>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news__heading heading" id="news">
+          <h3 class="news__heading-gen heading__first">Новини</h3>
+          <div class="news__heading-text archive__one archive">
+            <a
+              href="https://www.facebook.com/namu.museum/"
+              target="_blank"
+              class="archive__one-link"
+            >Архів виставок ➜</a>
+          </div>
+        </div>
+        <div class="news__events event">
+          <div class="event__content">
+            <div class="event__content-photo">
+              <img class="event__content-photo--image news__photo" src="./images/main-mobile/06.png" alt="angel">
+            </div>
+            <p class="event__content-date">11.07 - 22.09</p>
+            <h5 class="event__content-desc">Оголошення переможця</h5>
+            <p class="event__content-text">Друзі, сьогодні п'ятниця! А це означає, що час оголосити переможця розіграшу...</p>
+            <div class="news__events-button event__content-button button">
+              <a
+                href="#visiting"
+                class="button__link"
+              >Купити квиток</a>
+            </div>
+          </div>
+          <div class="event__content">
+            <div class="event__content-photo">
+              <img class="event__content-photo--image news__photo" src="./images/main-mobile/07.png" alt="pymonenko">
+            </div>
+            <p class="event__content-date">Діє постійно</p>
+            <h5 class="event__content-desc">Міжнародний день котів</h5>
+            <p class="event__content-text">Музей з левами не може просто так взяти і пропустити Міжнародний день котів!</p>
+            <div class="news__events-button event__content-button button">
+              <a
+                href="#visiting"
+                class="button__link"
+              >Купити квиток</a>
+            </div>
+            <div class="content__archive archive__two archive">
+              <a
+              href="https://www.facebook.com/namu.museum/"
+              target="_blank"
+              class="archive__two-link"
+              >Архів виставок ➜</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="follow">
+        <div class="follow__container container">
+          <div class="container__text">
+            <h3 class="container__text-head">Підпишіться на дайджест</h3>
+            <p class="container__text-item">Першими дізнавайтесь про новини музею та розіграші, отримуйте запрошення на події та читайте статті від кураторів</p>
+          </div>
+          <div class="container__follow">
+            <form
+            class="container__follow-input form"
+            action="#"
+            onsubmit="refresh"
+            method="get"
+            id="sent"
+            >
+              <label class="form__input">
+                <input
+                required
+                type="email"
+                placeholder="e-mail"
+                class="form__input-general"
+                id="mail"
+                >
+              </label>
+              <div class="form__click">
+                <label>
+                  <input class="form__click-button" type="submit" value="Підписатись"></input>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="information">
+        <div class="information__contacts">
+          <h5 class="information__contacts-head">Контакти</h5>
+          <p class="information__contacts-location">
+            <a
+            href="https://www.google.com/maps/place/%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9+%D1%85%D1%83%D0%B4%D0%BE%D0%B6%D0%BD%D1%96%D0%B9+%D0%BC%D1%83%D0%B7%D0%B5%D0%B9+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8/@50.4494397,30.5285706,17z/data=!4m13!1m7!3m6!1s0x40d4ce524453048d:0x49a2895b6cb43e10!2z0LLRg9C70LjRhtGPINCc0LjRhdCw0LnQu9CwINCT0YDRg9GI0LXQstGB0YzQutC-0LPQviwgNiwg0JrQuNGX0LIsIDAyMDAw!3b1!8m2!3d50.4494397!4d30.5307593!3m4!1s0x40d4ce524453048d:0x549e3a34119f524f!8m2!3d50.4493269!4d30.5304215"
+            target="_blank"
+            >Київ,<br>вул. М. Грушевського, 6</a>
+            <br>тел. <a href="tel: 278-13-57">278-13-57</a>, <a href="tel: 278-74-54">278-74-54</a>
+            <br><a href="mailto:numdaaadakhkh@gmail.com">info@namu.kiev.ua</a>
+          </p>
+          <div class="information__contacts-networks networks">
+            <a
+            class="networks__network-one"
+            href="https://www.facebook.com/namu.museum/"
+            target="_blank"
+            >
+              <svg
+              width="10"
+              height="20"
+              viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.90909 10.9434V20H6.54545V10.9434H9.27273L10 7.16981H6.54545V4.5283C6.54545 3.96226 7.09091 3.39623 7.63636 3.39623H10V0H5.81818C4.90909 0 2.90909 1.32075 2.90909 3.39623V7.16981H0V10.9434H2.90909Z" fill="#F1F5F4"></path>
+              </svg>
+            </a>
+            <a
+            class="networks__network-one"
+            href="https://twitter.com/NAMU_120"
+            target="_blank"
+            >
+              <svg
+              width="20"
+              height="16"
+              viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.78947 13.9669C2.94737 14.4548 0.912281 14.4412 0 14.3734C0.421053 14.78 3.57895 16 6.52632 16C9.47368 16 11.5789 15.5934 15.1579 12.3408C18.0211 9.73865 18.3158 5.971 18.1053 4.41244L20 2.37953H18.3158L19.3684 0.346626C18.5965 0.820951 17.0105 1.64763 16.8421 1.15973C16.6316 0.549857 13.6842 -0.873177 11.1579 0.753142C9.13684 2.0542 9.47368 3.80257 9.68421 5.22553C5.89474 4.81902 1.05263 0.753142 1.05263 0.753142C-0.122503 2.86053 1.46337 5.41233 2.09911 6.43529L2.10526 6.4452L0.631579 6.03862C0.631579 7.82757 2.31579 9.08812 3.15789 9.69776H1.89474C2.56842 11.4867 4.70175 12.4761 5.68421 12.7471C5.40351 12.9504 4.63158 13.479 3.78947 13.9669Z" fill="#F1F5F4"></path>
+              </svg>
+            </a>
+            <a
+            class="networks__network-one"
+            href="https://t.me/s/namu_museum120"
+            target="_blank"
+            >
+              <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                fill-rule="evenodd"
+                clip-rule="evenodd" d="M7.62887 17.4639L10.9278 14.2887L16.4948 19.0515L20 0L0 8.16495L5.56701 10.8866L7.62887 17.4639ZM8.0412 15.6495V12.0207L16.4948 3.85572L6.18553 10.433L8.0412 16.1031V15.6495Z" fill="#F1F5F4"></path>
+              </svg>
+            </a>
+            <a
+            class="networks__network-one"
+            href="https://www.instagram.com/namu.museum/"
+            target="_blank"
+            >
+              <svg
+              width="17"
+              height="17"
+              viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 13.2442V2.56977C0 1.38372 1.38372 0 2.76744 0H14.2326C15.814 0 17 1.5814 17 3.36047V14.0349C17 15.2209 16.0116 17 13.8372 17H3.95349C1.77907 17 0 15.4186 0 13.2442ZM8.50003 5.54189C6.8663 5.54189 5.54189 6.8663 5.54189 8.50003C5.54189 10.1338 6.8663 11.4582 8.50003 11.4582C10.1338 11.4582 11.4582 10.1338 11.4582 8.50003C11.4582 6.8663 10.1338 5.54189 8.50003 5.54189ZM4.34189 8.50003C4.34189 6.20356 6.20356 4.34189 8.50003 4.34189C10.7965 4.34189 12.6582 6.20356 12.6582 8.50003C12.6582 10.7965 10.7965 12.6582 8.50003 12.6582C6.20356 12.6582 4.34189 10.7965 4.34189 8.50003ZM13.0466 4.5465C13.5924 4.5465 14.035 4.10399 14.035 3.55813C14.035 3.01226 13.5924 2.56976 13.0466 2.56976C12.5007 2.56976 12.0582 3.01226 12.0582 3.55813C12.0582 4.10399 12.5007 4.5465 13.0466 4.5465Z" fill="#F1F5F4"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="information__schedule">
+          <h5 class="information__schedule-head">Розклад роботи</h5>
+          <p class="information__schedule-hours">
+            ПН: вихідний
+            <br>ВТ: вихідний
+            <br>СР: 10:00 - 17:00
+            <br>ЧТ: 10:00 - 17:00
+            <br>ПТ: 12:00 - 19:00
+            <br>СБ: 11:00 - 18:00
+            <br>НД: 10:00 - 17:00
+          </p>
+        </div>
+        <div class="information__general">
+          <h5 class="information__general-head">Головна</h5>
+          <div class="information__general-links">
+            <a class="information__general-links--thing" href="#exhibitions">Виставки</a>
+            <a class="information__general-links--thing" href="#coming">Події</a>
+            <a class="information__general-links--thing" href="#news">Новини</a>
+          </div>
+        </div>
+      </div>
+      <div class="privacy">
+        <div class="privacy__contents">
+          <p>© 2010 — 2020</p>
+          <p>Privacy — Terms</p>
+        </div>
+        <a class="privacy__up" href="#"></a>
+      </div>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

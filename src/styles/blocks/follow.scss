@@ -1,0 +1,152 @@
+.follow {
+  padding: 112px 20px 0;
+
+  @include onTablet {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 160px 39px 0;
+  }
+
+  @include onTablet {
+    display: block;
+    padding: 200px 55px 0;
+  }
+}
+
+.container {
+  @include onTablet {
+    grid-column: 1 / 6;
+  }
+
+  &__text {
+    @include onDesktop {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+
+    &-head {
+      grid-column: 1 / 6;
+      font-size: 28px;
+      line-height: 35px;
+      font-weight: 700;
+
+      @include onDesktop {
+        font-size: 48px;
+        line-height: 57px;
+      }
+    }
+
+    &-item {
+      grid-column: 7 / 13;
+      line-height: 24px;
+      margin-top: 20px;
+      font-weight: 400;
+    }
+  }
+
+  &__follow {
+    margin-top: 20px;
+
+    @include onDesktop {
+      margin-top: 50px;
+    }
+  }
+}
+
+.form {
+
+  &__input {
+    display: block;
+    width: 100%;
+    @include onTablet {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    @include onDesktop {
+      grid-template-columns: repeat(12, 1fr);
+    }
+
+    &-general {
+      width: 100%;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 1px solid $black;
+      color: $black;
+      background: $white;
+      cursor: pointer;
+
+      &::placeholder {
+        color: $black;
+      }
+
+      &:hover {
+        border-color: $btn-bckg;
+      }
+
+      &:hover::placeholder {
+        color: $btn-bckg;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: $btn-bckg;
+        color: $btn-bckg;
+      }
+
+      &:valid {
+        font-weight: 700;
+        color: $black;
+        border-color: $black;
+      }
+
+      &:focus::-webkit-input-placeholder {
+        opacity: 0;
+      }
+
+      @include onTablet {
+        grid-column: 1 / 5;
+      }
+    }
+  }
+
+  &__click {
+    margin-top: 30px;
+
+    & > label {
+      grid-column: 1 / 4;
+      height: 60px;
+    }
+
+    @include onTablet {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    @include onTablet {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      margin-top: 40px;
+    }
+
+    &-button {
+      height: 60px;
+      width: 100%;
+      background: $btn-bckg;
+      border: 1px solid $btn-bckg;
+      color: $white;
+      cursor: pointer;
+      font-weight: 600;
+
+      &:hover {
+        background: $btn-hov;
+        border-color: $btn-hov;
+      }
+
+      &:active {
+        background: $bth-press;
+        border-color: $bth-press;
+      }
+    }
+  }
+}

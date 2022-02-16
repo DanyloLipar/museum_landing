@@ -1,0 +1,67 @@
+.visit {
+  margin-top: 80px;
+  background: $background;
+
+  @include onTablet {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @include onDesktop {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    background-image: url(".././images/main-mobile/05.png");
+    background-position: left bottom;
+    background-size: 55vh;
+    background-repeat: no-repeat;
+  }
+
+  &__info {
+    padding: 50px 20px;
+    color: $white;
+
+    @include onTablet {
+      padding: 80px 0 80px 39px;
+      grid-column: 1 / 6;
+    }
+
+    @include onDesktop {
+      padding: 205px 0;
+      grid-column: 6 / 12;
+    }
+
+    &-gen {
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 38px;
+
+      @include onTablet {
+        font-size: 62px;
+        line-height: 62px;
+      }
+
+      @include onDesktop {
+        font-size: 80px;
+        line-height: 80px;
+      }
+    }
+
+    &-words {
+      margin-top: 20px;
+      line-height: 24px;
+    }
+
+    &-button {
+      margin-top: 40px;
+
+      @include onTablet {
+        width: 75%;
+        margin-top: 60px;
+      }
+
+      @include onDesktop {
+        width: 50%;
+      }
+    }
+  }
+}
